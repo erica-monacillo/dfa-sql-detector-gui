@@ -1,0 +1,26 @@
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build DFA App",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "src/main.cpp",
+                "-o",
+                "dfa_app",
+                "-I",
+                "include",
+                "-L",
+                "lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
